@@ -9,7 +9,6 @@ html {
 }
 :root {
   --background-text-white: #FFFFFF;
-  --background-color: #E5E5E5;
   --background-accent: #F5F4FA;
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -19,7 +18,7 @@ html {
 }
 body {
   margin: 0;
-  background-color: var(--background-color);
+  background-color: var(--background-text-white);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   font-size: 14px;
@@ -42,6 +41,7 @@ body {
 }
 .center {
   text-align: center;
+
 }
 .title-padding {
   padding-top: 94px;
@@ -154,7 +154,7 @@ body {
   margin-top: 0;
   margin-bottom: 46px;
   
-  color: var(--background-text-white);
+  color: var(--title-text-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -264,10 +264,14 @@ body {
 }
 
 /* Footer */
-/* .footer-social, */
-.social .item,
-.subs-flex {
+.flex-container,
+.social .item {
   display: flex;
+  align-items: center;
+}
+.link-conteiner {
+  margin-left: 179px;
+  margin-right: 102px;
 }
 .social .item:not(:last-child) {
   margin-right: 10px;
@@ -295,14 +299,16 @@ body {
   line-height: 1.14;
 }
 .footer .copyright {
+  display: block;
   margin-top: 18px;
-  margin-bottom: 21;
+  margin-bottom: 0;
+  padding-bottom: 21px;
+
   color: rgba(255, 255, 255, 0.4);
   font-size: 12px;
   line-height: 2;
   text-align: center;
 }
-
 /* button */
 .button {
   margin-top: 0;
@@ -333,7 +339,9 @@ body {
   margin: 0;
 }
 .portfolio-subtitle {
+  margin-top: 20px;
   margin-bottom: 4px;
+
   color: var(--title-text-color);
   font-size: 18px;
   line-height: 2;
@@ -358,6 +366,7 @@ body {
   margin-bottom: 0;
 }
 .portfolio-desc {
+  margin: 0;
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 30px;
