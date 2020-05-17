@@ -41,10 +41,12 @@ body {
 }
 .center {
   text-align: center;
-
 }
 .title-padding {
   padding-top: 94px;
+}
+.title-none {
+  display: none;
 }
 .container {
   margin-left: auto;
@@ -89,7 +91,7 @@ body {
  }
  .site-nav {
    display: flex;
-   margin-left: 80px;
+   margin-left: 86px;
  }
  .site-nav .item:not(:last-child) {
     margin-right: 50px;
@@ -149,8 +151,11 @@ body {
   text-align: center;
   padding-bottom: 94px;
 }
+.hero .container {
+  height: 600px;
+}
 .hero-title {
-  margin-top: 0;
+  margin: 0;
   margin-bottom: 46px;
   
   color: var(--title-text-color);
@@ -184,7 +189,7 @@ body {
   display: flex;
 }
 .features .item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 29px;
 }
 .features .link-decoration{
   margin-bottom: 30px;
@@ -299,19 +304,22 @@ body {
 }
 .footer .copyright {
   display: block;
-  margin-top: 18px;
-  margin-bottom: 0;
-  padding-bottom: 21px;
+  margin: 0;
 
   color: rgba(255, 255, 255, 0.4);
   font-size: 12px;
   line-height: 2;
   text-align: center;
 }
+.copyright-container {
+  margin-top: 68px;
+}
+.footer .container {
+  padding-bottom: 21px;
+}
 /* button */
 .button {
   margin-top: 0;
-
   display: inline-block;
   border-radius: 4px;
   padding: 10px 32px;
@@ -333,9 +341,8 @@ body {
 
 .portfolio {
   color: var(--title-text-color);
-}
-.portfolio-title {
-  margin: 0;
+  padding-top: 93px;
+  padding-bottom: 94px;
 }
 .portfolio-subtitle {
   margin-top: 20px;
@@ -376,9 +383,11 @@ body {
 }
 
 /* radio button */
-.section-btn .btn {
-  margin-top: 94px;
+.section-btn {
   margin-bottom: 50px;
+}
+
+.section-btn .btn {
   color: var(--title-text-color);
   font-family: inherit;
   font-style: normal;
@@ -386,6 +395,9 @@ body {
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
+}
+.section-btn .btn:not(:last-child) {
+  margin-right: 8px;
 }
 .section-btn .btn:hover,
 .section-btn .btn:focus {
