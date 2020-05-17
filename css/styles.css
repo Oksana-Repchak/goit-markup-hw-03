@@ -41,6 +41,7 @@ body {
 }
 .center {
   text-align: center;
+  justify-content: center; 
 }
 .title-padding {
   padding-top: 94px;
@@ -119,7 +120,6 @@ body {
 }
 
 
-
 /* site contacts */
 .contacts {
   display: flex;
@@ -148,8 +148,7 @@ body {
 /* hero */
 
 .hero{
-  text-align: center;
-  padding-bottom: 94px;
+  margin-bottom: 94px;
 }
 .hero .container {
   height: 600px;
@@ -268,10 +267,16 @@ body {
 }
 
 /* Footer */
+/* .flex-container {
+  justify-content: space-between;
+} */
 .flex-container,
 .social .item {
   display: flex;
   align-items: center;
+}
+.footer .container {
+  padding-bottom: 21px;
 }
 .link-conteiner {
   margin-left: 179px;
@@ -313,9 +318,6 @@ body {
 }
 .copyright-container {
   margin-top: 68px;
-}
-.footer .container {
-  padding-bottom: 21px;
 }
 /* button */
 .button {
