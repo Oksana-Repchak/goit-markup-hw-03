@@ -52,7 +52,7 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
 }
 .link-decoration {
   display: block;
@@ -70,7 +70,6 @@ body {
   }
 .logo.white {
   display: inline-block;
-  margin-top: 48px;
   margin-bottom: 10px;
 
   color: var(--background-text-white);
@@ -145,6 +144,8 @@ body {
 /* hero */
 
 .hero .container {
+  display: flex;
+  align-items: center;
   height: 600px;
 }
 .hero-title {
@@ -178,12 +179,6 @@ body {
 .features {
   display: flex;
 }
-.features .item:not(:last-child) {
-  margin-right: 30px;
-}
-.features .link-decoration{
-  margin-bottom: 30px;
-}
 .features .features-title {
   margin: 0;
   margin-bottom: 10px;
@@ -192,6 +187,16 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+}
+.features .item {
+  width: 270px;
+  margin-right: 30px;
+}
+.features .item:last-child {
+  margin-right: 0;
+}
+.features .link-decoration{
+  margin-bottom: 30px;
 }
 .features .text {
   margin: 0;
@@ -256,23 +261,21 @@ body {
 }
 
 /* Footer */
-/* .flex-container {
-  justify-content: space-between;
-} */
-.flex-container,
+.footer-container {
+  display: flex;
+  padding-top: 48px;
+  padding-bottom: 28px;
+  align-items: baseline;
+}
 .social .item {
   display: flex;
   align-items: center;
 }
-.footer .container {
-  padding-bottom: 21px;
-}
 .address-container {
   margin-right: 69px;
-  margin-bottom: 28px;
 }
 .link-conteiner {
-  margin-right: 93px;
+  margin-right: 94px;
 }
 .social .item:not(:last-child) {
   margin-right: 10px;
@@ -292,22 +295,25 @@ body {
 .footer .subscription {
   display: block;
   margin: 0;
-  margin-bottom: 21;
 
   color: var(--background-text-white);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
 }
-.footer .copyright {
-  display: block;
+.copyright {
   margin: 0;
   padding-top: 18px;
+  padding-bottom: 21px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 
   color: rgba(255, 255, 255, 0.4);
   font-size: 12px;
   line-height: 2;
   text-align: center;
+}
+/* .copyright-container {
+   */
 }
 /* button */
 .button {
@@ -353,7 +359,7 @@ body {
   color: var(--title-text-color);
 }
 .portfolio-list .item {
-  width: 380px;
+  width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -374,7 +380,7 @@ body {
   line-height: 1.5;
 }
 
-/* radio button */
+/* button */
 .section-btn {
   margin-bottom: 50px;
 }
