@@ -324,10 +324,9 @@ body {
   line-height: 2;
   text-align: center;
 }
-/* .copyright-container {
-   */
-}
+
 /* button */
+
 .button {
   margin-top: 0;
   display: inline-block;
@@ -345,6 +344,7 @@ body {
   text-decoration: none;
   text-align: center;
 }
+
 /*---------------------------------------------------*/
 
 /* portfolio page */
