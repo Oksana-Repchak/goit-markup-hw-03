@@ -49,8 +49,15 @@ img {
   text-align: center;
   justify-content: center; 
 }
-.title-none {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .container {
   margin-left: auto;
@@ -267,7 +274,7 @@ img {
 }
 .social {
   display: flex;
-  margin-bottom: 24px;
+  padding-bottom: 24px;
 }
 
 /* Client */
@@ -385,7 +392,7 @@ img {
 
 .portfolio {
   color: var(--title-text-color);
-  padding-top: 93px;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 .portfolio-subtitle {
@@ -432,7 +439,6 @@ img {
 }
 .card-content {
   padding: 20px 24px;
-  background: #ffffff;
   border-right: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
   border-left: 1px solid var(--border-color);
